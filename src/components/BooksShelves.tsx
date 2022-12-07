@@ -28,7 +28,7 @@ const BooksShelves: React.FC = (props) => {
     getAll().then((res)=>{
       dispatch(bookActions.setBooks({items:res}));
     });
-  },[dispatch,state])
+  },[dispatch])
 
   useEffect(() => {
     const books = state.items;
